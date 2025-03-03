@@ -88,7 +88,7 @@ bool getNucleusMass2020(short a, short z,double &m){
          if (nuclide.A == a && nuclide.Z == z) {
              //eleName=nuclide.element 
              double mex=nuclide.mass_excess*1e-3;//MeV
-   			 m= a * kamu +mex -z*kMe +(14.4381*pow(z,2.39)+ 1.55468e-6*pow(z,5.35)*1e-6);//formula in AME2020
+   			 m= a * kamu +mex -z*kMe +(14.4381*pow(z,2.39)+ 1.55468e-6*pow(z,5.35))*1.e-6;//formula in AME2020
              return true;
            }
        }
